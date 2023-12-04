@@ -426,6 +426,7 @@ public class Building_RimsprLab : Building, IThingHolder, IStoreSettingsParent
         Scribe_Collections.Look(ref ingredientCount, "ingredientCount");
         Scribe_Values.Look(ref nutrientGoal, "nutrientGoal");
         Scribe_Deep.Look(ref innerContainer, "innerContainer");
+        Scribe_Deep.Look(ref inputSettings, "inputSettings", this);
     }
 
     public override void Tick()
